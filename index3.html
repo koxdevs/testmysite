@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LeccePods</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #09080C; /* Colore di sfondo principale */
+        }
+
+        .background-image {
+            background-image: url('https://cdn.discordapp.com/attachments/1148051425780314123/1153104087966023740/b193787de02de927f93df2a7e2ae8ce8_1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .diagonal-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            background: linear-gradient(45deg, #ffffffb7, #ffffffb7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            cursor: hand;
+        }
+
+        .product-box {
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            margin: 0 20px;
+            cursor: hand;
+        }
+
+        .product-box:hover {
+            transform: scale(1.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            cursor: hand;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: hand;
+        }
+
+        .product-price {
+            font-size: 16px;
+            margin-top: 5px;
+            cursor: hand;
+        }
+
+        .product-button {
+            border: 2px solid black;
+            background-color: rgba(255, 255, 255, 0);
+            color: black;
+            padding: 10px 20px;
+            font-size: 11px;
+            cursor: pointer;
+            border-color: #000000;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #1d1d1d;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #1d1d1d;
+        }
+
+        ::selection {
+            background-color: #3434345a;
+            color: #ffffff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="background-image">
+      <div class="diagonal-text">𝕷𝕰𝕮𝕮𝕰<span>&nbsp;</span>𝕻𝕺𝕯𝕾</div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#010101" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,85.3C640,96,800,128,960,165.3C1120,203,1280,245,1360,266.7L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  
+
+    <div class="product-container">
+        <div class="product-box">
+            <a href="default.asp"></a><img class="product-image"
+                                            src="https://d2j6dbq0eux0bg.cloudfront.net/images/91031213/3848577835.png"
+                                            alt="Prodotto 1"></a>
+            <div class="product-title">AirPods Pro</div>
+            <div class="product-price">40,00€</div>
+            <br>
+            <button class="product-button">Compra ora</button>
+        </div>
+    </div>
+</body>
+</html>
